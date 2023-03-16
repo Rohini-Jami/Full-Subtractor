@@ -1,0 +1,6 @@
+module FullSubtractor(D,B0,A,B,C);
+input A,B,C;
+output D,B0;
+assign D=A^B^C;
+assign B0=(!A&B)|(!B&C)|(!C&A);
+endmodule
